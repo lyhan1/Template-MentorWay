@@ -868,3 +868,74 @@ header .navbar {
 }
 
 }
+/* Mobile optimization for screens under 600px */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 0 10px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    padding: 40px 0 60px;
+  }
+
+  header .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .hero-section .section-content {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+  }
+
+  .hero-section .hero-details .title {
+    font-size: 2.5rem;
+  }
+
+  .hero-section .hero-details .subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .hero-section .hero-details .description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .hero-section .hero-details .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .about-section .section-content,
+  .menu-section .menu-list,
+  .gallery-section .gallery-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-section .contact-grid {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .footer-section .section-content {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
