@@ -547,6 +547,88 @@ header .navbar {
   flex-direction: column;
   gap: 20px;
 }
+/* Contact Section Layout */
+.contact-section {
+  padding: 80px 20px;
+  background-color: var(--light-pink-color);
+}
+
+.contact-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+/* Left: Contact Info */
+.contact-info-list {
+  flex: 1 1 40%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-size: 1rem;
+  color: var(--dark-color);
+}
+
+.contact-info i {
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+/* Right: Form */
+.contact-form {
+  flex: 1 1 50%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1rem;
+  border: 1px solid var(--medium-gray-color);
+  border-radius: var(--border-radius-s);
+  font-family: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--secondary-color);
+  outline: none;
+}
+
+.contact-form button {
+  width: fit-content;
+  padding: 12px 28px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 999px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .contact-info-list,
+  .contact-form {
+    flex: 1 1 100%;
+  }
+}
 
 
 /* Footer section styling */
