@@ -529,6 +529,24 @@ header .navbar {
 .contact-form .submit-button:hover {
   background-color: var(--primary-color);
 }
+.contact-grid {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info-list {
+  flex: 1 1 300px;
+}
+
+.contact-form {
+  flex: 1 1 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
 
 /* Footer section styling */
