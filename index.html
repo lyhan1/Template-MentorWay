@@ -274,25 +274,28 @@
             </li>
           </ul>
 
-          <form
-  action="https://formspree.io/f/mwpbenbd"
-  method="POST"
-  class="contact-form"
->
-  <input type="hidden" name="_redirect" value="https://lyhan1.github.io/thank-you.html" />
+         <div class="contact-container">
+  <form
+    action="https://formspree.io/f/mwpbenbd"
+    method="POST"
+    class="contact-form"
+  >
+    <input type="hidden" name="_redirect" value="https://lyhan1.github.io/thank-you.html" />
 
-  <label>
-    Your email:
-    <input type="email" name="email" required>
-  </label>
+    <div class="form-group">
+      <label for="email">Your email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
 
-  <label>
-    Your message:
-    <textarea name="message" required></textarea>
-  </label>
+    <div class="form-group">
+      <label for="message">Your message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
 
-  <button type="submit">Send</button>
-</form>
+    <button type="submit">Send</button>
+  </form>
+</div>
+
 
 
       <!-- Footer section -->
