@@ -275,18 +275,29 @@
           </ul>
 
           <form action="#" class="contact-form">
-            <input type="text" placeholder="Your name" class="form-input" required />
-            <input type="email" placeholder="Your email" class="form-input" required />
-            <textarea placeholder="Your message" class="form-input" required></textarea>
-            <button type="submit" class="button submit-button">Submit</button>
-          </form>
+          <!-- modify this form HTML and place wherever you want your form -->
+          <form
+          action="https://formspree.io/f/mwpbenbd"
+          method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
         </div>
       </section>
 
       <!-- Footer section -->
       <footer class="footer-section">
         <div class="section-content">
-          <p class="copyright-text">© 2024 Coffee Shop</p>
+          <p class="copyright-text">© 2025 MentorWay Education LLC</p>
 
           <div class="social-link-list">
             <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
