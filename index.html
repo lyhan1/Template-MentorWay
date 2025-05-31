@@ -255,18 +255,21 @@
     </div>
 
     <!-- RIGHT: Contact Form -->
-    <form
-      action="https://formspree.io/f/mwpbenbd"
-      method="POST"
-      class="contact-form"
-    >
-      <input type="hidden" name="_redirect" value="https://mentorwayedu.com/thank-you.html" />
+  <form
+  action="https://formspree.io/f/mwpbenbd"
+  method="POST"
+  class="contact-form"
+>
+  <!-- redirect instruction -->
+  <input type="hidden" name="_redirect" value="https://mentorwayedu.com/thank-you.html" />
 
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" rows="5" placeholder="Your message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
+  <!-- input fields -->
+  <input type="text" name="name" placeholder="Your name" required />
+  <input type="email" name="email" placeholder="Your email" required />
+  <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+  
+  <button type="submit">Submit</button>
+</form>
 
   </div>
 </section>
