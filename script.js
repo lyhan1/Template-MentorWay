@@ -47,3 +47,21 @@ let swiper = new Swiper(".slider-wrapper", {
     },
   },
 });
+
+function toggleBio(button) {
+  const fullBio = button.previousElementSibling;
+  const shortBio = fullBio.previousElementSibling;
+
+  const isExpanded = fullBio.classList.contains("show");
+
+  if (isExpanded) {
+    fullBio.classList.remove("show");
+    shortBio.style.display = "inline";
+    button.textContent = "Read more";
+  } else {
+    fullBio.classList.add("show");
+    shortBio.style.display = "none";
+    button.textContent = "Read less";
+  }
+}
+
