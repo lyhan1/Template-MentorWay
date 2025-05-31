@@ -274,25 +274,26 @@
             </li>
           </ul>
 
-          <form action="#" class="contact-form">
-          <!-- modify this form HTML and place wherever you want your form -->
           <form
-          action="https://formspree.io/f/mwpbenbd"
-          method="POST"
+  action="https://formspree.io/f/mwpbenbd"
+  method="POST"
+  class="contact-form"
 >
+  <input type="hidden" name="_redirect" value="https://lyhan1.github.io/thank-you.html" />
+
   <label>
     Your email:
-    <input type="email" name="email">
+    <input type="email" name="email" required>
   </label>
+
   <label>
     Your message:
-    <textarea name="message"></textarea>
+    <textarea name="message" required></textarea>
   </label>
-  <!-- your other form fields go here -->
+
   <button type="submit">Send</button>
 </form>
-        </div>
-      </section>
+
 
       <!-- Footer section -->
       <footer class="footer-section">
