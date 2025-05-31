@@ -240,65 +240,42 @@
       </section>
 
       <!-- Contact section -->
-      <section class="contact-section" id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="section-content">
-          <ul class="contact-info-list">
-            <li class="contact-info">
-              <i class="fa-solid fa-location-crosshairs"></i>
-              <p>311 Forman Ave</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-envelope"></i>
-              <p>contact@mentorwayedu.com</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-phone"></i>
-              <p>(332) 733-0150</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Saturday: 10:00 AM - 3:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Sunday: Closed</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-globe"></i>
-              <p>https://mentorwayedu.com/</p>
-            </li>
-          </ul>
+     <section class="contact-section" id="contact">
+  <div class="section-title">Contact Us</div>
+  <div class="section-content contact-grid">
+    
+    <div class="contact-info-list">
+      <div class="contact-info"><i class="fas fa-map-marker-alt"></i> 311 Forman Ave</div>
+      <div class="contact-info"><i class="fas fa-envelope"></i> contact@mentorwayedu.com</div>
+      <div class="contact-info"><i class="fas fa-phone"></i> (332) 733–0150</div>
+      <div class="contact-info"><i class="fas fa-clock"></i> Mon–Fri: 9:00–5:00</div>
+      <div class="contact-info"><i class="fas fa-clock"></i> Sat: 10:00–3:00</div>
+      <div class="contact-info"><i class="fas fa-globe"></i> mentorwayedu.com</div>
+    </div>
 
-         <div class="contact-container">
-<div class="section-content contact-grid">
-  <div class="contact-info-list">
-    <!-- Left info (no change needed here) -->
+    <form
+      action="https://formspree.io/f/mwpbenbd"
+      method="POST"
+      class="contact-form"
+    >
+      <input type="hidden" name="_redirect" value="https://mentorwayedu.com/thank-you.html" />
+      
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" name="email" id="email" class="form-input" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" class="form-input" required></textarea>
+      </div>
+
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+    
   </div>
+</section>
 
-  <form
-    action="https://formspree.io/f/mwpbenbd"
-    method="POST"
-    class="contact-form"
-  >
-    <input type="hidden" name="_redirect" value="https://mentorwayedu.com/thank-you.html" />
-
-    <div class="form-group">
-      <label for="email">Your Email</label>
-      <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
-    </div>
-
-    <div class="form-group">
-      <label for="message">Your Message</label>
-      <textarea id="message" name="message" class="form-input" placeholder="Enter your message" required></textarea>
-    </div>
-
-    <button type="submit" class="submit-button">Send Message</button>
-  </form>
 </div>
 
 
