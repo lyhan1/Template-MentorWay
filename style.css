@@ -868,74 +868,37 @@ header .navbar {
 }
 
 }
-/* Mobile optimization for screens under 600px */
 @media screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-    line-height: 1.4;
-    padding: 0 10px;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-    padding: 40px 0 60px;
-  }
-
-  header .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar .nav-menu {
-    flex-direction: column;
-    width: 100%;
-    gap: 10px;
-  }
-
   .hero-section .section-content {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 80px 20px 40px;
     align-items: center;
+    text-align: center;
   }
 
   .hero-section .hero-details .title {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
+    line-height: 1.2;
   }
 
   .hero-section .hero-details .subtitle {
     font-size: 1.2rem;
-    text-align: center;
+    margin-bottom: 16px;
   }
 
   .hero-section .hero-details .description {
     font-size: 1rem;
-    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 24px;
   }
 
   .hero-section .hero-details .buttons {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 
-  .about-section .section-content,
-  .menu-section .menu-list,
-  .gallery-section .gallery-list {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .contact-section .contact-grid {
-    flex-direction: column;
-    gap: 30px;
-  }
-
-  .contact-form {
+  .hero-section .hero-details .button {
     width: 100%;
-  }
-
-  .footer-section .section-content {
-    flex-direction: column;
-    gap: 20px;
-    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
   }
 }
