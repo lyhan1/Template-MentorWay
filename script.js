@@ -48,20 +48,42 @@ let swiper = new Swiper(".slider-wrapper", {
   },
 });
 
-function toggleBio(button) {
-  const fullBio = button.previousElementSibling;
-  const shortBio = fullBio.previousElementSibling;
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".expand-button").forEach((button) => {
+    button.addEventListener("click", () => {
+      const moreText = button.previousElementSibling;
+      const isExpanded = moreText.style.display === "inline";
 
-  const isExpanded = fullBio.classList.contains("show");
+      moreText.style.display = isExpanded ? "none" : "inline";
+      button.textContent = isExpanded ? "Read more" : "Read less";
+    });
+  });
+});
 
-  if (isExpanded) {
-    fullBio.classList.remove("show");
-    shortBio.style.display = "inline";
-    button.textContent = "Read more";
-  } else {
-    fullBio.classList.add("show");
-    shortBio.style.display = "none";
-    button.textContent = "Read less";
-  }
-}
+new Swiper(".testimonials-swiper-2", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 25,
+  pagination: {
+    el: ".testimonials-swiper-2 .swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  navigation: {
+    nextEl: ".feedback-next",
+    prevEl: ".feedback-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
 
