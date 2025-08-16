@@ -349,7 +349,9 @@ header .navbar {
   line-height: 1.6;
 }
 
-/* Testimonials section styling */
+/* ===============================
+   Testimonials / Team Section
+   =============================== */
 .testimonials-section {
   padding: 50px 0 100px;
   background: var(--light-pink-color);
@@ -368,7 +370,7 @@ header .navbar {
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  min-height: 500px; /* Ensures all cards have same height */
+  min-height: 500px; /* Ensures all cards same height */
 }
 
 .testimonials-section .testimonial .user-image {
@@ -391,7 +393,7 @@ header .navbar {
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  min-height: 90px; /* Adjust this as needed for your tallest content */
+  min-height: 90px;
 }
 
 .testimonials-section .feedback {
@@ -401,23 +403,22 @@ header .navbar {
   font-style: italic;
   color: #444;
   font-size: 16px;
-  text-align: center; /* Optional: center-align the paragraph */
+  text-align: center;
 }
 
-/* REMOVE this if you switched to inline expansion (not using short/full blocks) */
+/* Bio toggle */
 .testimonials-section .short-bio,
 .testimonials-section .full-bio {
   display: unset;
 }
 
-/* Still useful if you use it to hide .more-text spans */
 .testimonials-section .hidden {
   display: none;
 }
 
 .testimonials-section .expand-button {
-  display: block;              /* Ensures it goes on a new line */
-  margin: 12px auto 0;         /* Spacing and center alignment */
+  display: block;
+  margin: 12px auto 0;
   padding: 6px 14px;
   font-size: 14px;
   border: none;
@@ -431,6 +432,65 @@ header .navbar {
 .testimonials-section .expand-button:hover {
   background-color: var(--primary-color);
 }
+
+/* ===============================
+   Swiper Controls (Pagination + Arrows)
+   =============================== */
+.testimonials-section .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: var(--secondary-color);
+}
+
+.testimonials-section .swiper-slide-button {
+  color: var(--secondary-color);
+  transition: 0.3s ease;
+}
+
+.testimonials-section .swiper-slide-button:hover {
+  color: var(--primary-color);
+}
+
+/* --- Fixed Custom Arrows --- */
+.feedback-prev,
+.feedback-next {
+  font-size: 28px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  position: absolute;
+  top: 38%;                     /* position arrows higher */
+  transform: translateY(-50%);  /* center them vertically */
+  z-index: 10;
+}
+
+.feedback-prev { left: 20px; }
+.feedback-next { right: 20px; }
+
+.feedback-prev:hover,
+.feedback-next:hover {
+  color: var(--primary-color);
+}
+
+/* ===============================
+   Responsive Tweaks
+   =============================== */
+@media (max-width: 992px) {
+  .feedback-prev,
+  .feedback-next {
+    top: 42%;        /* slightly lower for tablet screens */
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedback-prev,
+  .feedback-next {
+    top: 45%;        /* position arrows a bit lower on mobile */
+    font-size: 22px;
+  }
+}
+
 
 
 /* Swiper controls */
@@ -797,6 +857,7 @@ header .navbar {
 #testimonials-2 {
   display: none;
 }
+
 
 
 
