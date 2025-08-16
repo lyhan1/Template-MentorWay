@@ -86,4 +86,26 @@ new Swiper(".testimonials-swiper-2", {
   },
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('show-courses-btn');
+  const panel = document.getElementById('course-images');
+  if (!btn || !panel) return;
+
+  btn.addEventListener('click', () => {
+    const isHidden = panel.hasAttribute('hidden');
+    if (isHidden) {
+      panel.removeAttribute('hidden');
+      panel.style.display = 'flex'; // ensure layout
+      btn.textContent = 'Hide courses introduction';
+      btn.setAttribute('aria-expanded', 'true');
+    } else {
+      panel.setAttribute('hidden', '');
+      btn.textContent = 'Click here to see two courses introduction';
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  });
+});
+
+
+
 
