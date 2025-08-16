@@ -1,4 +1,4 @@
-cdocument.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
   /* ===== Mobile menu ===== */
   const navbarLinks = document.querySelectorAll(".nav-menu .nav-link");
   const menuOpenButton = document.querySelector("#menu-open-button");
@@ -28,15 +28,6 @@ cdocument.addEventListener('DOMContentLoaded', () => {
       navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
       breakpoints: { 0:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3} }
     });
-
-    new Swiper(".testimonials-swiper-2", {
-      loop: true,
-      grabCursor: true,
-      spaceBetween: 25,
-      pagination: { el: ".testimonials-swiper-2 .swiper-pagination", clickable: true, dynamicBullets: true },
-      navigation: { nextEl: ".feedback-next", prevEl: ".feedback-prev" },
-      breakpoints: { 0:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3} }
-    });
   }
 
   /* ===== "Read more" expanders ===== */
@@ -54,7 +45,7 @@ cdocument.addEventListener('DOMContentLoaded', () => {
   const panel = document.getElementById('course-images');
   if (link && panel) {
     link.addEventListener('click', (e) => {
-      e.preventDefault();                    // stop #jump
+      e.preventDefault(); // stop #jump
       const isOpen = panel.classList.toggle('is-visible');
       panel.classList.toggle('is-hidden', !isOpen);
       link.setAttribute('aria-expanded', String(isOpen));
@@ -65,6 +56,8 @@ cdocument.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
 
 
 
