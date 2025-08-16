@@ -86,23 +86,33 @@
     </div>
   </div>
 </section>
-
 <section class="choose-section" id="choose">
   <div class="section-content">
     <div class="choose-details">
       <h2 class="section-title">Why Choose Us</h2>
-      <p class="text">We pair expert editing with mentorship. Our personalized approach helps students shape distinctive narratives and win offers from top universities worldwide.</p>
-      <button id="show-courses-btn" class="button show-courses-btn" aria-expanded="false">
+      <p class="text">
+        We pair expert editing with mentorship. Our personalized approach helps students shape
+        distinctive narratives and win offers from top universities worldwide.
+      </p>
+
+      <!-- Toggle link -->
+      <a href="#" id="toggle-courses" class="show-courses-link" aria-expanded="false">
         Click here to see two courses introduction
-      </button>
+      </a>
     </div>
 
-    <div class="choose-image-wrapper" id="course-images" hidden>
-      <img src="images/Recognition.Patterns.Image5.jpg" alt="Recognition Patterns Course" class="choose-image" />
-      <img src="images/Creative.Thinking.Learning.Image5.jpg" alt="Creative Thinking & Learning Course" class="choose-image" />
+    <!-- Hidden images -->
+    <div id="course-images" class="courses-panel is-hidden" aria-hidden="true">
+      <img src="images/Recognition.Patterns.Image5.jpg"
+           alt="Recognition Patterns Course"
+           class="choose-image" />
+      <img src="images/Creative.Thinking.Learning.Image5.jpg"
+           alt="Creative Thinking & Learning Course"
+           class="choose-image" />
     </div>
   </div>
 </section>
+
 
   </div>
 </section>
@@ -355,6 +365,7 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
 
