@@ -1,98 +1,95 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MentorWay | 明途教育</title>
-    <!-- Icons & Swiper CSS -->
+    <!-- Linking Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <!-- Linking Swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <!-- Your CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
-
+  
   <body>
     <!-- Header / Navbar -->
     <header>
       <nav class="navbar">
-        <a href="#" class="nav-logo"><h2 class="logo-text">✍️ MentorWay</h2></a>
+        <a href="#" class="nav-logo">
+          <h2 class="logo-text">✍️ MentorWay</h2>
+        </a>
+
         <ul class="nav-menu">
           <button id="menu-close-button" class="fas fa-times"></button>
-          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-          <li class="nav-item"><a href="#choose" class="nav-link">Why Choose Us</a></li>
-          <li class="nav-item"><a href="#menu" class="nav-link">Our Service</a></li>
-          <li class="nav-item"><a href="#testimonials-2" class="nav-link">Testimonials</a></li>
-          <li class="nav-item"><a href="#testimonials" class="nav-link">Our Team</a></li>
-          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" class="nav-link">Our Service</a>
+          </li>
+           <li class="nav-item">
+            <a href="#testimonials-2" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="#testimonials" class="nav-link">Our Team</a>
+          </li>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
         </ul>
+
         <button id="menu-open-button" class="fas fa-bars"></button>
       </nav>
     </header>
 
+</body>
+</html>
+
     <main>
-      <!-- Hero -->
+      <!-- Hero section -->
       <section class="hero-section">
-        <div class="section-content">
-          <div class="hero-details">
-            <h2 class="title">MentorWay</h2>
-            <h3 class="subtitle">Your Path to Polished Writing</h3>
-            <p class="description">
-              We provide expert editing and writing guidance for academic, professional, and personal documents — helping writers grow into confident communicators.
-            </p>
-            <div class="buttons">
-              <a href="#about" class="button learn-more">Learn More</a>
-              <a href="#contact" class="button contact-us">Contact Us</a>
-            </div>
-          </div>
-        </div>
-      </section>
+  <div class="section-content">
+    <div class="hero-details">
+      <h2 class="title">MentorWay</h2>
+      <h3 class="subtitle">Your Path to Polished Writing</h3>
+      <p class="description">We provide expert editing and writing guidance for academic, professional, and personal documents — helping writers grow into confident communicators.</p>
+      <div class="buttons">
+        <a href="#about" class="button learn-more">Learn More</a>
+        <a href="#contact" class="button contact-us">Contact Us</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- About -->
+
+      <!-- About section -->
       <section class="about-section" id="about">
-        <div class="section-content">
-          <div class="about-image-wrapper">
-            <img src="images/student.jpg" alt="Student" class="about-image" />
-          </div>
-          <div class="about-details">
-            <h2 class="section-title">About Us</h2>
-            <p class="text">
-              At MentorWay, we provide expert editing and writing guidance for academic, professional, and personal documents — helping applicants communicate their value with clarity and impact. Over the past decade, MentorWay had helped over 2,000 students craft compelling application essays and gain admission to top universities worldwide.
-            </p>
-            <div class="social-link-list">
-              <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="section-content">
+    <div class="about-image-wrapper">
+      <img src="images/student.jpg" alt="Student" class="about-image" />
+    </div>
+    <div class="about-details">
+      <h2 class="section-title">About Us</h2>
+      <p class="text">
+        At MentorWay, we provide expert editing and writing guidance for academic, professional, and personal documents — helping applicants communicate their value with clarity and impact. Over the past decade, MentorWay had helped over 2,000 students craft compelling application essays and gain admission to top universities worldwide.
+      </p>
+      <div class="social-link-list">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <!-- Why Choose Us (with toggle images) -->
-      <section class="choose-section" id="choose">
-        <div class="section-content">
-          <div class="choose-details">
-            <h2 class="section-title">Why Choose Us</h2>
-            <p class="text">
-              We pair expert editing with mentorship. Our personalized approach helps students shape
-              distinctive narratives and win offers from top universities worldwide.
-            </p>
 
-            <!-- Toggle link (click to show images) -->
-            <a href="#choose" id="toggle-courses" class="show-courses-link" aria-expanded="false">
-              Click here to see two courses introduction
-            </a>
-          </div>
 
-          <!-- Hidden images; revealed via JS -->
-          <div id="course-images" class="courses-panel is-hidden" aria-hidden="true">
-            <img src="images/Recognition.Patterns.Image5.jpg" alt="Recognition Patterns Course" class="choose-image" />
-            <img src="images/Creative.Thinking.Learning.Image5.jpg" alt="Creative Thinking & Learning Course" class="choose-image" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Services -->
+      <!-- Menu section -->
       <section class="menu-section" id="menu">
         <h2 class="section-title">What we offer</h2>
         <div class="section-content">
@@ -108,7 +105,9 @@
               <img src="images/story-telling.jpg" alt="Story Telling" class="menu-image" />
               <div class="menu-details">
                 <h3 class="name">📖 Storytelling</h3>
-                <p class="text">Crafting compelling personal narratives for applications, interviews, and branding—designed to highlight your unique voice and journey.</p>
+                <p class="text">Crafting compelling personal narratives for applications, interviews, and branding—designed to highlight your unique voice and journey.
+
+</p>
               </div>
             </li>
             <li class="menu-item">
@@ -129,96 +128,175 @@
               <img src="images/visa.jpg" alt="Visa" class="menu-image" />
               <div class="menu-details">
                 <h3 class="name">🛂 Visa & Study Permit</h3>
-                <p class="text">Comprehensive support for student visa and study permit applications worldwide—including but not limited to the U.S., Canada, Australia, and the U.K.</p>
+                <p class="text">Comprehensive support for student visa and study permit applications worldwide—including but not limited to the U.S., Canada, Australia, and the U.K. We guide you through document preparation, application submission, and interview readiness to ensure a smooth process across different countries.</p>
               </div>
             </li>
-          </ul>
+             </ul>
         </div>
       </section>
 
-      <!-- Testimonials section -->
-      <section class="testimonials-section" id="testimonials">
-        <h2 class="section-title">Our Team</h2>
-        <div class="section-content">
-          <div class="slider-container swiper">
-            <div class="slider-wrapper">
-              <ul class="testimonials-list swiper-wrapper">
-                
-                <!-- Member 1 -->
-                <li class="testimonial swiper-slide">
-                  <img src="images/Danielle.png" alt="User" class="user-image" />
-                  <h3 class="name">Danielle Taana Smith, Ph.D.</h3>
-                  <p class="feedback">
-                    Our lead consultant, Dr. Danielle Taana Smith, brings 20+ years of experience guiding students and professionals
-                    <span class="more-text" style="display: none;">
-                      . Dr. Smith is the Director of the Renee Crown Honors Program at Syracuse University. With a PhD in Sociology, her work spans global health, conflict resolution, smart cities, and student success. She has published widely and mentors across disciplines.
-                    </span>
-                    <button class="expand-button">Read more</button>
-                  </p>
-                </li>
+      
+     <!-- Testimonials section -->
+<section class="testimonials-section" id="testimonials">
+  <h2 class="section-title">Our Team</h2>
+  <div class="section-content">
+    <div class="slider-container swiper">
+      <div class="slider-wrapper">
+        <ul class="testimonials-list swiper-wrapper">
 
-                <!-- Member 2 -->
-                <li class="testimonial swiper-slide">
-                  <img src="images/Robin.png" alt="User" class="user-image" />
-                  <h3 class="name">Robin Berkowitz Smith</h3>
-                  <p class="feedback">
-                    Robin Berkowitz Smith is an Academic Advisor, bringing a rich background in education, admissions, and career...
-                    <span class="more-text" style="display: none;">
-                      services. Robin was a first-generation college student and an alumnus of Syracuse University, where she earned her BS in Nutrition Management. She later obtained her M.Ed. in Higher Education Administration from Kent State. With over 30 years of student affairs and advising experience at SU, she is now an advisor in the Honors Program. She enjoys mentoring, travel, and spending time with her grand-dogs, Thor and Codie.
-                    </span>
-                    <button class="expand-button">Read more</button>
-                  </p>
-                </li>
+<li class="testimonial swiper-slide">
+  <img src="images/Danielle.png" alt="User" class="user-image" />
+  <h3 class="name">Danielle Taana Smith, Ph.D.</h3>
+  <p class="feedback">
+    Our lead consultant, Dr. Danielle Taana Smith, brings 20+ years of experience guiding students and professionals
+    <span class="more-text" style="display: none;">
+      . Dr. Smith is the Director of the Renee Crown Honors Program at Syracuse University. With a PhD in Sociology, her work spans global health, conflict resolution, smart cities, and student success. She has published widely and mentors across disciplines.
+    </span>
+    <button class="expand-button">Read more</button>
+</li>
 
-                <!-- Member 3 -->
-                <li class="testimonial swiper-slide">
-                  <img src="images/Yuhan.jpg" alt="User" class="user-image" />
-                  <h3 class="name">Yuhan Luo</h3>
-                  <p class="feedback">
-                    Yuhan Luo is the Member and lead education consultant at MentorWay, specializing in U.S. undergraduate and...
-                    <span class="more-text" style="display: none;">
-                      graduate admissions as well as Canadian university applications. He holds a Master’s in Enterprise Risk Management from Columbia University and combines that with hands-on higher education experience from Syracuse University. Fluent in English and Mandarin, Yuhan works closely with international students to build personalized admissions strategies.
-                    </span>
-                    <button class="expand-button">Read more</button>
-                  </p>
-                </li>
+<li class="testimonial swiper-slide">
+  <img src="images/Robin.png" alt="User" class="user-image" />
+  <h3 class="name">Robin Berkowitz Smith</h3>
+  <p class="feedback">
+    Robin Berkowitz Smith is an Academic Advisor, bringing a rich background in education, admissions, and career...
+    <span class="more-text" style="display: none;">
+     services. Robin was a first-generation college student and an alumnus of Syracuse University, where she earned her BS in Nutrition Management. She later obtained her M.Ed. in Higher Education Administration from Kent State. With over 30 years of student affairs and advising experience at SU, she is now an advisor in the Honors Program. She enjoys mentoring, travel, and spending time with her grand-dogs, Thor and Codie.
+    </span>
+    <button class="expand-button">Read more</button>
+</li>
 
-                <!-- Member 4 -->
-                <li class="testimonial swiper-slide">
-                  <img src="images/Michael.jpg" alt="User" class="user-image" />
-                  <h3 class="name">Michael A. Radin, Ph.D.</h3>
-                  <p class="feedback">
-                    Michael is the Associate Professor of Mathematics at Rochester Institute of Technology. He is also an International...
-                    <span class="more-text" style="display: none;">
-                      Scholar and Textbook Writer. Michael designed and taught courses such as Business Start-Ups, Risk Management, and Digital Thinking in the U.S. and Europe. He has vast experience preparing students for university and graduate-level education.
-                    </span>
-                    <button class="expand-button">Read more</button>
-                  </p>
-                </li>
+<li class="testimonial swiper-slide">
+  <img src="images/Yuhan.jpg" alt="User" class="user-image" />
+  <h3 class="name">Yuhan Luo</h3>
+  <p class="feedback">
+    Yuhan Luo is the Member and lead education consultant at MentorWay, specializing in U.S. undergraduate and...
+    <span class="more-text" style="display: none;">
+    graduate admissions as well as Canadian university applications. Yuhan Luo is the founder and lead consultant at MentorWay (明途教育), a firm dedicated to empowering students through expert guidance in U.S. and Canadian university admissions. He holds a Master’s in Enterprise Risk Management from Columbia University and combines that with hands-on higher education experience from Syracuse University. Fluent in English and Mandarin, Yuhan works closely with international students to build personalized admissions strategies, enhance profiles, and tell compelling stories to stand out in competitive applicant pools.
+    </span>
+    <button class="expand-button">Read more</button>
+</li>
 
-              </ul>
 
-              <!-- Swiper Controls -->
-              <div class="swiper-pagination"></div>
-              <div class="swiper-slide-button swiper-button-prev"></div>
-              <div class="swiper-slide-button swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-      </section>
+<li class="testimonial swiper-slide">
+  <img src="images/Michael.jpg" alt="User" class="user-image" />
+  <h3 class="name">Michael A. Radin, Ph.D.</h3>
+  <p class="feedback">
+    Michael is the Associate Professor of Mathematics at Rochester Institution of Technology. He is also an International...
+    <span class="more-text" style="display: none;">
+     Scholar and Textbook Writer & Series Editor at World Scientific Publishing Company. Michael taught this course for high school students at the Eastern Latvia Technology High School in Rezekne, Latvia and for university students at WSEI in Krakow, Poland. Michael designed and taught courses such as Introduction to Business Start-Ups & Writing a Welcoming Selling Story in Ukraine and Poland, and  Introduction to Risk Management and Developing International Collaborations at Riga Technical University in Riga, Latvia. Michael recently published a textbook on Online Assessment Schemes and Introduction to Digital Thinking with the World Scientific Publishing Company. Michael has vast experiences in preparing high school students for university level education. Teaching the SAT Preparatory Course at RIT, and individual consultations with high school students from Latvia, Ukraine and Poland. Analogously, Michael has vast experiences in preparing bachelor's students for graduate level education.
+    </span>
+    <button class="expand-button">Read more</button>
+</li>
+</ul>
 
-      <!-- Contact -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-slide-button swiper-button-prev"></div>
+        <div class="swiper-slide-button swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials section #2 -->
+<section class="testimonials-section" id="testimonials-2">
+  <h2 class="section-title">Testimonials</h2>
+  <div class="section-content">
+    <div class="slider-container swiper testimonials-swiper-2">
+      <div class="slider-wrapper">
+        <ul class="testimonials-list swiper-wrapper">
+
+          <li class="testimonial swiper-slide">
+            <img src="images/Danielle.png" alt="User" class="user-image" />
+            <h3 class="name">Jane Doe</h3>
+            <p class="feedback">
+              Jane had an amazing experience with MentorWay, finding the guidance incredibly helpful for her graduate application
+              <span class="more-text" style="display: none;">
+                . She mentioned how the team helped her refine her essays, improve her profile, and gain confidence through mock interviews. Jane was accepted into multiple top-tier programs and highly recommends the service to other students.
+              </span>
+            </p>
+            <button class="expand-button">Read more</button>
+          </li>
+
+          <li class="testimonial swiper-slide">
+            <img src="images/Robin.png" alt="User" class="user-image" />
+            <h3 class="name">John Smith</h3>
+            <p class="feedback">
+              John worked with MentorWay during his college application process and appreciated the strategic planning support
+              <span class="more-text" style="display: none;">
+                . He especially valued the one-on-one mentoring sessions and structured timeline that kept him on track. He now studies at his dream university and credits the consulting team's guidance for making it possible.
+              </span>
+            </p>
+            <button class="expand-button">Read more</button>
+          </li>
+
+          <li class="testimonial swiper-slide">
+            <img src="images/Yuhan.jpg" alt="User" class="user-image" />
+            <h3 class="name">Emily Zhang</h3>
+            <p class="feedback">
+              Emily used MentorWay's services for help with personal statement writing and interview prep
+              <span class="more-text" style="display: none;">
+                . She said the consultants helped her find her authentic voice and sharpen her storytelling. Emily received offers from several competitive graduate programs in the U.S. and U.K.
+              </span>
+            </p>
+            <button class="expand-button">Read more</button>
+          </li>
+
+          
+          <li class="testimonial swiper-slide">
+            <img src="images/Yuhan.jpg" alt="User" class="user-image" />
+            <h3 class="name">Emily Zhang</h3>
+            <p class="feedback">
+              Emily used MentorWay's services for help with personal statement writing and interview prep
+              <span class="more-text" style="display: none;">
+                . She said the consultants helped her find her authentic voice and sharpen her storytelling. Emily received offers from several competitive graduate programs in the U.S. and U.K.
+              </span>
+            </p>
+            <button class="expand-button">Read more</button>
+          </li>
+        </ul>
+
+        <div class="swiper-pagination"></div>
+<div class="swiper-slide-button swiper-button-prev feedback-prev"></div>
+<div class="swiper-slide-button swiper-button-next feedback-next"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- Contact section -->
       <section class="contact-section" id="contact">
         <h2 class="section-title">Contact Us</h2>
         <div class="section-content">
           <ul class="contact-info-list">
-            <li class="contact-info"><i class="fa-solid fa-location-crosshairs"></i><p>311 Forman Ave</p></li>
-            <li class="contact-info"><i class="fa-regular fa-envelope"></i><p>info@MentorWay.com</p></li>
-            <li class="contact-info"><i class="fa-solid fa-phone"></i><p>(332) 733-0150</p></li>
-            <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Mon–Fri: 9:00–17:00</p></li>
-            <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Sat: 10:00–15:00</p></li>
-            <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Sun: Closed</p></li>
-            <li class="contact-info"><i class="fa-solid fa-globe"></i><p>contact@mentorwayedu.com</p></li>
+            <li class="contact-info">
+              <i class="fa-solid fa-location-crosshairs"></i>
+              <p>311 Forman Ave</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-envelope"></i>
+              <p>info@MentorWay.com</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-phone"></i>
+              <p>(332) 733-0150</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Saturday: 10:00 AM - 3:00 PM</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-regular fa-clock"></i>
+              <p>Sunday: Closed</p>
+            </li>
+            <li class="contact-info">
+              <i class="fa-solid fa-globe"></i>
+              <p>contact@mentorwayedu.com</p>
+            </li>
           </ul>
 
           <form action="#" class="contact-form">
@@ -230,15 +308,17 @@
         </div>
       </section>
 
-      <!-- Footer -->
+      <!-- Footer section -->
       <footer class="footer-section">
         <div class="section-content">
-          <p class="copyright-text">© 2024 MentorWay</p>
+          <p class="copyright-text">© 2024 Coffee Shop</p>
+
           <div class="social-link-list">
             <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
             <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
             <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
           </div>
+
           <p class="policy-text">
             <a href="#" class="policy-link">Privacy policy</a>
             <span class="separator">•</span>
@@ -248,12 +328,13 @@
       </footer>
     </main>
 
-    <!-- Scripts at end of body -->
+    <!-- Linking Swiper script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Linking custom script -->
     <script src="script.js"></script>
   </body>
 </html>
-
 
 
 
