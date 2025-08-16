@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MentorWay | 明途教育</title>
+    <!-- Icons & Swiper CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Your CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
 
@@ -18,6 +20,7 @@
           <button id="menu-close-button" class="fas fa-times"></button>
           <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
           <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#choose" class="nav-link">Why Choose Us</a></li>
           <li class="nav-item"><a href="#menu" class="nav-link">Our Service</a></li>
           <li class="nav-item"><a href="#testimonials-2" class="nav-link">Testimonials</a></li>
           <li class="nav-item"><a href="#testimonials" class="nav-link">Our Team</a></li>
@@ -27,8 +30,6 @@
       </nav>
     </header>
 
-    <!-- ❌ removed the premature </body></html> here -->
-
     <main>
       <!-- Hero -->
       <section class="hero-section">
@@ -36,7 +37,9 @@
           <div class="hero-details">
             <h2 class="title">MentorWay</h2>
             <h3 class="subtitle">Your Path to Polished Writing</h3>
-            <p class="description">We provide expert editing and writing guidance for academic, professional, and personal documents — helping writers grow into confident communicators.</p>
+            <p class="description">
+              We provide expert editing and writing guidance for academic, professional, and personal documents — helping writers grow into confident communicators.
+            </p>
             <div class="buttons">
               <a href="#about" class="button learn-more">Learn More</a>
               <a href="#contact" class="button contact-us">Contact Us</a>
@@ -65,7 +68,7 @@
         </div>
       </section>
 
-      <!-- Why Choose Us -->
+      <!-- Why Choose Us (with toggle images) -->
       <section class="choose-section" id="choose">
         <div class="section-content">
           <div class="choose-details">
@@ -75,7 +78,7 @@
               distinctive narratives and win offers from top universities worldwide.
             </p>
 
-            <!-- Link that toggles images -->
+            <!-- Toggle link (click to show images) -->
             <a href="#choose" id="toggle-courses" class="show-courses-link" aria-expanded="false">
               Click here to see two courses introduction
             </a>
@@ -89,9 +92,7 @@
         </div>
       </section>
 
-      <!-- ❌ removed the stray closing tags that were here: </div></section> -->
-
-      <!-- Menu -->
+      <!-- Services -->
       <section class="menu-section" id="menu">
         <h2 class="section-title">What we offer</h2>
         <div class="section-content">
@@ -135,38 +136,87 @@
         </div>
       </section>
 
-      <!-- Team -->
-      <!-- (Your testimonials sections unchanged) -->
+      <!-- Team (Your existing swiper block) -->
+      <section class="testimonials-section" id="testimonials">
+        <h2 class="section-title">Our Team</h2>
+        <div class="section-content">
+          <div class="slider-container swiper">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <!-- ... your existing team slides here ... -->
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials #2 -->
+      <section class="testimonials-section" id="testimonials-2">
+        <h2 class="section-title">Testimonials</h2>
+        <div class="section-content">
+          <div class="slider-container swiper testimonials-swiper-2">
+            <div class="slider-wrapper">
+              <ul class="testimonials-list swiper-wrapper">
+                <!-- ... your existing testimonials slides here ... -->
+              </ul>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev feedback-prev"></div>
+              <div class="swiper-slide-button swiper-button-next feedback-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- Contact -->
-      <!-- (Unchanged) -->
+      <section class="contact-section" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="section-content">
+          <ul class="contact-info-list">
+            <li class="contact-info"><i class="fa-solid fa-location-crosshairs"></i><p>311 Forman Ave</p></li>
+            <li class="contact-info"><i class="fa-regular fa-envelope"></i><p>info@MentorWay.com</p></li>
+            <li class="contact-info"><i class="fa-solid fa-phone"></i><p>(332) 733-0150</p></li>
+            <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Mon–Fri: 9:00–17:00</p></li>
+            <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Sat: 10:00–15:00</p></li>
+            <li class="contact-info"><i class="fa-regular fa-clock"></i><p>Sun: Closed</p></li>
+            <li class="contact-info"><i class="fa-solid fa-globe"></i><p>contact@mentorwayedu.com</p></li>
+          </ul>
+
+          <form action="#" class="contact-form">
+            <input type="text" placeholder="Your name" class="form-input" required />
+            <input type="email" placeholder="Your email" class="form-input" required />
+            <textarea placeholder="Your message" class="form-input" required></textarea>
+            <button type="submit" class="button submit-button">Submit</button>
+          </form>
+        </div>
+      </section>
 
       <!-- Footer -->
-      <!-- (Unchanged) -->
+      <footer class="footer-section">
+        <div class="section-content">
+          <p class="copyright-text">© 2024 MentorWay</p>
+          <div class="social-link-list">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+          <p class="policy-text">
+            <a href="#" class="policy-link">Privacy policy</a>
+            <span class="separator">•</span>
+            <a href="#" class="policy-link">Refund policy</a>
+          </p>
+        </div>
+      </footer>
     </main>
 
     <!-- Scripts at end of body -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
-
-    <!-- Tiny inline helper to ensure prevention even if script.js is cached/old -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        const link = document.getElementById('toggle-courses');
-        const panel = document.getElementById('course-images');
-        if (!link || !panel) return;
-        link.addEventListener('click', function (e) {
-          e.preventDefault(); // stop jumping
-          const open = panel.classList.toggle('is-visible');
-          panel.classList.toggle('is-hidden', !open);
-          link.setAttribute('aria-expanded', String(open));
-          panel.setAttribute('aria-hidden', String(!open));
-          link.textContent = open ? 'Hide courses introduction' : 'Click here to see two courses introduction';
-        });
-      });
-    </script>
   </body>
 </html>
+
 
 
 
