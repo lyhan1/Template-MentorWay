@@ -301,6 +301,27 @@ header .navbar {
   padding: 50px 0 100px;
 }
 
+.choose-image-wrapper {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.choose-image {
+  width: 45%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.show-courses-btn {
+  margin-top: 15px;
+  cursor: pointer;
+}
+
 .menu-section .menu-list {
   display: flex;
   flex-wrap: wrap;
@@ -797,3 +818,4 @@ header .navbar {
 #testimonials-2 {
   display: none;
 }
+
