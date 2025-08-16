@@ -68,29 +68,34 @@
 
 
       <!-- About section -->
-      <section class="about-section" id="about">
-    <div class="section-content">
+<section class="about-section" id="about">
+  <div class="section-content">
     <div class="about-image-wrapper">
       <img src="images/student.jpg" alt="Student" class="about-image" />
     </div>
+
     <div class="about-details">
       <h2 class="section-title">About Us</h2>
       <p class="text">
-  At MentorWay, we provide expert editing and writing guidance for academic, professional, 
-  and personal documents — helping applicants communicate their value with clarity and impact. 
-  Over the past decade, MentorWay had helped over 2,000 students craft compelling application 
-  essays and gain admission to top universities worldwide. At this time, besides professional editing, 
-  we offer two professional courses taught by Professor Micheal Radin, 
-  <a href="#about" id="about-toggle" class="about-toggle-link" aria-expanded="false">
-    click here for more information
-  </a>.
-</p>
+        At MentorWay, we provide expert editing and writing guidance for academic, 
+        professional, and personal documents — helping applicants communicate their 
+        value with clarity and impact. Over the past decade, MentorWay had helped over 
+        2,000 students craft compelling application essays and gain admission to top 
+        universities worldwide. At this time, besides professional editing, 
+        we offer two professional courses taught by Professor Micheal Radin.
+      </p>
 
-<!-- Hidden images (start hidden) -->
-<div id="about-courses" class="about-courses" aria-hidden="true">
-  <img src="images/Recognition.Patterns.Image5.jpg" alt="Recognition Patterns course" />
-  <img src="images/Creative.Thinking.Learning.Image5.jpg" alt="Creative Thinking & Learning course" />
-</div>
+      <!-- Toggleable content -->
+      <details class="about-courses">
+        <summary class="about-toggle-link">click here for more information</summary>
+        <div class="about-courses-body">
+          <img src="images/Recognition.Patterns.Image5.jpg" alt="Recognition Patterns course" />
+          <img src="images/Creative.Thinking.Learning.Image5.jpg" alt="Creative Thinking & Learning course" />
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
 
 
 
@@ -283,6 +288,7 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
 
