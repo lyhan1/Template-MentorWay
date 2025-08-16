@@ -264,6 +264,44 @@ header .navbar{
   .testimonials-section .testimonial{min-height:390px}
 }
 
+/* Link styling */
+.about-toggle-link {
+  color: darkred;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.about-toggle-link:hover {
+  color: #a10000;
+}
+
+/* Hidden image panel */
+.about-courses {
+  display: none;
+  gap: 20px;
+  margin-top: 18px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.about-courses.show {
+  display: flex;
+}
+
+.about-courses img {
+  max-width: 460px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, .12);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-courses img {
+    max-width: 100%;
+  }
+}
+
 
 
 
