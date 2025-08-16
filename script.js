@@ -124,6 +124,38 @@ document.addEventListener('DOMContentLoaded', () => {
       : 'Click here to see two courses introduction';
   });
 });
+/* Toggle link + sliding panel for courses */
+.show-courses-link{
+  display:inline-block;
+  margin-top:12px;
+  text-decoration:underline;
+  cursor:pointer;
+}
+
+.courses-panel{
+  overflow:hidden;
+  max-height:0;                 /* start hidden */
+  transition:max-height 300ms ease;
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  margin-top:16px;
+}
+
+.courses-panel.is-visible{ max-height:1200px; } /* adjust if images are taller */
+
+.choose-image{
+  width:45%;
+  max-width:300px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+/* (Optional) ensure initial state */
+.is-hidden{ max-height:0; }
+
 
 
 
