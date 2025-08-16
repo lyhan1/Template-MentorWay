@@ -108,6 +108,24 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
+// Open lightbox
+document.getElementById("about-toggle").addEventListener("click", function(e) {
+  e.preventDefault();
+  document.getElementById("lightbox").style.display = "flex";
+});
+
+// Close lightbox
+document.querySelector(".lightbox .close").addEventListener("click", function() {
+  document.getElementById("lightbox").style.display = "none";
+});
+
+// Close if clicking outside images
+document.getElementById("lightbox").addEventListener("click", function(e) {
+  if (e.target === this) {
+    this.style.display = "none";
+  }
+});
+
 
 
 
