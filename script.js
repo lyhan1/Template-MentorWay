@@ -86,6 +86,28 @@ new Swiper(".testimonials-swiper-2", {
   },
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const aboutLink  = document.getElementById('about-toggle');
+  const aboutPanel = document.getElementById('about-courses');
+  
+  if (aboutLink && aboutPanel) {
+    aboutLink.addEventListener('click', (e) => {
+      e.preventDefault();
+      const isOpen = aboutPanel.classList.toggle('show');
+      
+      aboutLink.setAttribute('aria-expanded', isOpen);
+      aboutPanel.setAttribute('aria-hidden', !isOpen);
+      aboutLink.textContent = isOpen 
+        ? 'Hide course information' 
+        : 'click here for more information';
+
+      if (isOpen) {
+        aboutPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  }
+});
+
 
 
 
