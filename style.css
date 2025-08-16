@@ -492,6 +492,46 @@ header .navbar {
 }
 
 
+/* --- Fixed Custom Arrows --- */
+.feedback-prev,
+.feedback-next {
+  font-size: 28px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  position: absolute;
+  top: 38%;                     /* position arrows higher */
+  transform: translateY(-50%);  /* center them vertically */
+  z-index: 10;
+}
+
+.feedback-prev { left: 20px; }
+.feedback-next { right: 20px; }
+
+.feedback-prev:hover,
+.feedback-next:hover {
+  color: var(--primary-color);
+}
+
+/* ===============================
+   Responsive Tweaks
+   =============================== */
+@media (max-width: 992px) {
+  .feedback-prev,
+  .feedback-next {
+    top: 42%;        /* slightly lower for tablet screens */
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .feedback-prev,
+  .feedback-next {
+    top: 45%;        /* position arrows a bit lower on mobile */
+    font-size: 22px;
+  }
+}
+
+
 
 /* Swiper controls */
 .testimonials-section .swiper-pagination-bullet {
@@ -857,6 +897,7 @@ header .navbar {
 #testimonials-2 {
   display: none;
 }
+
 
 
 
