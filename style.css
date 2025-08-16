@@ -981,6 +981,38 @@ header .navbar {
   margin-top: 0;
 }
 
+/* ==== Fix big white space under OUR TEAM ==== */
+#testimonials.testimonials-section{
+  padding: 40px 0 8px;                 /* was ~100px bottom */
+}
+
+#testimonials .slider-wrapper{
+  margin: 0 60px 8px;                   /* was 50px bottom */
+}
+
+/* Swiper reserves space for pagination; remove it */
+#testimonials .swiper{
+  padding-bottom: 0 !important;         /* kill internal reserved space */
+}
+
+/* Put the dots in normal flow with tiny margin */
+#testimonials .swiper-pagination{
+  position: static !important;          /* no absolute bottom gap */
+  margin: 10px 0 0;
+}
+
+/* Cards can force extra height; trim a bit */
+#testimonials .testimonial{
+  min-height: 430px;                    /* was 500px; adjust as needed */
+}
+
+/* Optional: even tighter on mobile */
+@media (max-width: 768px){
+  #testimonials.testimonials-section{ padding: 28px 0 4px; }
+  #testimonials .slider-wrapper{ margin: 0 20px 6px; }
+  #testimonials .testimonial{ min-height: 380px; }
+}
+
 
 
 
