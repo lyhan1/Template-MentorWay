@@ -106,6 +106,25 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+  const link = document.getElementById('toggle-courses');
+  const panel = document.getElementById('course-images');
+
+  if (!link || !panel) return;
+
+  link.addEventListener('click', (e) => {
+    e.preventDefault();
+    const isOpen = panel.classList.toggle('is-visible');
+    panel.classList.toggle('is-hidden', !isOpen);
+
+    link.setAttribute('aria-expanded', String(isOpen));
+    panel.setAttribute('aria-hidden', String(!isOpen));
+    link.textContent = isOpen
+      ? 'Hide courses introduction'
+      : 'Click here to see two courses introduction';
+  });
+});
+
 
 
 
