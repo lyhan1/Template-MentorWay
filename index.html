@@ -87,19 +87,34 @@
   </div>
 </section>
 
-      <!-- Why Choose Us section -->
-<section class="choose-section" id="choose">
-  <div class="section-content">
-    </div>
-    <div class="choose-details">
-      <h2 class="section-title">About Our COurse</h2>
-      <p class="text">
-        At MentorWay, we go beyond editing — we mentor. Our personalized approach ensures each student’s unique story is
-        heard. With decades of combined expertise, we’ve published two professional course, taught by Professor Micheal
-      </p>
-      <ul class="choose-list">
-      </ul>
-    </div>
+      <!-- Why Choose Us (new section with toggle images) -->
+      <section class="choose-section" id="choose">
+        <div class="section-content">
+          <div class="choose-details">
+            <h2 class="section-title">Why Choose Us</h2>
+            <p class="text">
+              We pair expert editing with mentorship. Our personalized approach helps students shape distinctive narratives and win offers from top universities worldwide.
+            </p>
+
+            <!-- Toggle button -->
+            <button class="button show-courses-btn" onclick="toggleCourses()">
+              Click here to see two courses introduction
+            </button>
+          </div>
+
+          <!-- Hidden images -->
+          <div class="choose-image-wrapper" id="course-images" style="display: none;">
+            <img
+              src="images/Recognition.Patterns.Image5.jpg"
+              alt="Recognition Patterns Course"
+              class="choose-image"
+            />
+            <img
+              src="images/Creative.Thinking.Learning.Image5.jpg"
+              alt="Creative Thinking & Learning Course"
+              class="choose-image"
+            />
+          </div>
   </div>
 </section>
 
@@ -351,5 +366,6 @@
     <script src="script.js"></script>
   </body>
 </html>
+
 
 
