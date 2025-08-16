@@ -302,46 +302,22 @@ header .navbar{
   }
 }
 
-/* Lightbox overlay */
-.lightbox {
-  display: none; /* Hidden by default */
-  position: fixed;
-  z-index: 9999;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.8); /* Dark overlay */
-  justify-content: center;
-  align-items: center;
-  overflow-y: auto;
-  padding: 40px;
-}
-
-/* Close button */
-.lightbox .close {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  cursor: pointer;
-}
-
 /* Images inside lightbox */
 .lightbox-content {
-  max-width: 1000px;
-  width: 90%;
+  max-width: 95vw;   /* allow up to 95% of screen width */
+  width: auto;
   text-align: center;
 }
 
 .lightbox-content img {
-  width: 100%;
-  max-width: 900px;
+  width: 95vw;        /* scale image to almost full width */
+  max-width: none;    /* remove hard 900px cap */
+  height: auto;       /* keep proportions */
   margin: 20px auto;
   border-radius: 10px;
   display: block;
 }
+
 
 
 
