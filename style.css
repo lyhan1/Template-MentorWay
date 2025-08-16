@@ -944,8 +944,7 @@ header .navbar {
   bottom: 10px !important;
 }
 
-/* If you ALSO had custom arrows (.feedback-prev/.feedback-next) from another slider,
-   keep them, but they won't affect #testimonials. */
+<div>
 
 /* Tighten space under OUR TEAM */
 #testimonials.testimonials-section {
@@ -981,6 +980,7 @@ header .navbar {
 #contact .section-title {
   margin-top: 0;
 }
+
 
 
 
