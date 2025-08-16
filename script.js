@@ -1,162 +1,70 @@
-const navbarLinks = document.querySelectorAll(".nav-menu .nav-link");
-const menuOpenButton = document.querySelector("#menu-open-button");
-const menuCloseButton = document.querySelector("#menu-close-button");
+cdocument.addEventListener('DOMContentLoaded', () => {
+  /* ===== Mobile menu ===== */
+  const navbarLinks = document.querySelectorAll(".nav-menu .nav-link");
+  const menuOpenButton = document.querySelector("#menu-open-button");
+  const menuCloseButton = document.querySelector("#menu-close-button");
 
-menuOpenButton.addEventListener("click", () => {
-  // Toggle mobile menu visibility
-  document.body.classList.toggle("show-mobile-menu");
-});
+  if (menuOpenButton) {
+    menuOpenButton.addEventListener("click", () => {
+      document.body.classList.toggle("show-mobile-menu");
+    });
+  }
 
-// Close menu when the close button is clicked
-menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+  if (menuCloseButton && menuOpenButton) {
+    menuCloseButton.addEventListener("click", () => menuOpenButton.click());
+  }
 
-// Close menu when nav link is clicked
-navbarLinks.forEach((link) => {
-  link.addEventListener("click", () => menuOpenButton.click());
-});
+  navbarLinks.forEach((link) => {
+    link.addEventListener("click", () => menuOpenButton && menuOpenButton.click());
+  });
 
-/* Initializing Swiper */
-let swiper = new Swiper(".slider-wrapper", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 25,
+  /* ===== Swiper sliders ===== */
+  if (window.Swiper) {
+    new Swiper(".slider-wrapper", {
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 25,
+      pagination: { el: ".swiper-pagination", clickable: true, dynamicBullets: true },
+      navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+      breakpoints: { 0:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3} }
+    });
 
-  // Pagination bullets
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
+    new Swiper(".testimonials-swiper-2", {
+      loop: true,
+      grabCursor: true,
+      spaceBetween: 25,
+      pagination: { el: ".testimonials-swiper-2 .swiper-pagination", clickable: true, dynamicBullets: true },
+      navigation: { nextEl: ".feedback-next", prevEl: ".feedback-prev" },
+      breakpoints: { 0:{slidesPerView:1}, 768:{slidesPerView:2}, 1024:{slidesPerView:3} }
+    });
+  }
 
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  /* Responsive breakpoints */
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-document.addEventListener("DOMContentLoaded", () => {
+  /* ===== "Read more" expanders ===== */
   document.querySelectorAll(".expand-button").forEach((button) => {
     button.addEventListener("click", () => {
       const moreText = button.previousElementSibling;
-      const isExpanded = moreText.style.display === "inline";
-
-      moreText.style.display = isExpanded ? "none" : "inline";
+      const isExpanded = moreText && moreText.style.display === "inline";
+      if (moreText) moreText.style.display = isExpanded ? "none" : "inline";
       button.textContent = isExpanded ? "Read more" : "Read less";
     });
   });
-});
 
-new Swiper(".testimonials-swiper-2", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 25,
-  pagination: {
-    el: ".testimonials-swiper-2 .swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".feedback-next",
-    prevEl: ".feedback-prev",
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
-
-document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.getElementById('show-courses-btn');
-  const panel = document.getElementById('course-images');
-  if (!btn || !panel) return;
-
-  btn.addEventListener('click', () => {
-    const isHidden = panel.hasAttribute('hidden');
-    if (isHidden) {
-      panel.removeAttribute('hidden');
-      panel.style.display = 'flex'; // ensure layout
-      btn.textContent = 'Hide courses introduction';
-      btn.setAttribute('aria-expanded', 'true');
-    } else {
-      panel.setAttribute('hidden', '');
-      btn.textContent = 'Click here to see two courses introduction';
-      btn.setAttribute('aria-expanded', 'false');
-    }
-  });
-});
-
-document.addEventListener('DOMContentLoaded', () => {
+  /* ===== Courses toggle (link) ===== */
   const link = document.getElementById('toggle-courses');
   const panel = document.getElementById('course-images');
-
-  if (!link || !panel) return;
-
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const isOpen = panel.classList.toggle('is-visible');
-    panel.classList.toggle('is-hidden', !isOpen);
-
-    link.setAttribute('aria-expanded', String(isOpen));
-    panel.setAttribute('aria-hidden', String(!isOpen));
-    link.textContent = isOpen
-      ? 'Hide courses introduction'
-      : 'Click here to see two courses introduction';
-  });
+  if (link && panel) {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();                    // stop #jump
+      const isOpen = panel.classList.toggle('is-visible');
+      panel.classList.toggle('is-hidden', !isOpen);
+      link.setAttribute('aria-expanded', String(isOpen));
+      panel.setAttribute('aria-hidden', String(!isOpen));
+      link.textContent = isOpen
+        ? 'Hide courses introduction'
+        : 'Click here to see two courses introduction';
+    });
+  }
 });
-/* Toggle link + sliding panel for courses */
-.show-courses-link{
-  display:inline-block;
-  margin-top:12px;
-  text-decoration:underline;
-  cursor:pointer;
-}
-
-.courses-panel{
-  overflow:hidden;
-  max-height:0;                 /* start hidden */
-  transition:max-height 300ms ease;
-  display:flex;
-  gap:20px;
-  justify-content:center;
-  align-items:center;
-  flex-wrap:wrap;
-  margin-top:16px;
-}
-
-.courses-panel.is-visible{ max-height:1200px; } /* adjust if images are taller */
-
-.choose-image{
-  width:45%;
-  max-width:300px;
-  border-radius:12px;
-  box-shadow:0 4px 12px rgba(0,0,0,.1);
-}
-
-/* (Optional) ensure initial state */
-.is-hidden{ max-height:0; }
-
-
 
 
 
