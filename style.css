@@ -302,6 +302,43 @@ header .navbar{
   }
 }
 
+/* ABOUT: toggle link + images (scoped) */
+.about-details .about-courses {
+  margin-top: 10px;
+}
+
+.about-details .about-toggle-link {
+  color: darkred;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  list-style: none;                /* summary bullet off in Firefox */
+}
+
+.about-details .about-courses > summary::-webkit-details-marker {
+  display: none;                   /* hide default marker in WebKit */
+}
+
+.about-details .about-courses-body {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+
+.about-details .about-courses-body img {
+  width: 100%;
+  max-width: 420px;                /* keeps images from pushing layout */
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,.12);
+}
+
+@media (max-width: 768px) {
+  .about-details .about-courses-body img {
+    max-width: 100%;
+  }
+}
+
 
 
 
