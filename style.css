@@ -310,7 +310,7 @@ header .navbar{
 }
 
 .lightbox-content img {
-  width: 95vw;        /* scale image to almost full width */
+  width: 75vw;        /* scale image to almost full width */
   max-width: none;    /* remove hard 900px cap */
   height: auto;       /* keep proportions */
   margin: 20px auto;
@@ -354,6 +354,7 @@ header .navbar{
   background: rgba(0,0,0,0.9);
   transform: scale(1.1);  /* slight enlarge on hover */
 }
+
 
 
 
